@@ -10,11 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var lilliIstub: UIImageView!
+    
+    
+    @IBAction func buttON(_ sender: Any) {
+        print("Butt is ON")
+        if (lilliIstub.isHidden) {
+            lilliIstub.isHidden=false
+            print("Lilli tagasi!")
+        } else {
+            lilliIstub.isHidden=true
+            print("Lilli kadunud!")
+        }
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("view has loaded")
+        
     }
 
 
+
+    
+    
+    
+    
 }
 
